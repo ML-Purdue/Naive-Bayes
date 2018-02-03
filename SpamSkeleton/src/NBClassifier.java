@@ -34,12 +34,12 @@ public class NBClassifier {
         try {
             br = new BufferedReader(new FileReader(csvFileName));
             br.readLine(); // this will skips the first line
-
             while ((line = br.readLine()) != null) {
-                // use comma as separator
-                String[] example = line.split(",");
+                String[] example = line.split(",");   // use comma as separator
                 String label = example[0];
-                String text = example[1]; //Array of words in text example
+                String text = example[1]; 
+                String[] words = parseText(text); //Array of words in text example
+                
                 //Do something if label is 'spam',
                 //Do something else if label is 'ham
             }
