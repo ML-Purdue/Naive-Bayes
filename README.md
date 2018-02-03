@@ -1,5 +1,6 @@
 # Naive-Bayes
 This project contains skeleton code and files to use Naive Bayes as a spam filter.
+
 **The testing and training data can be found under /SpamSkeleton/src/**
 
 
