@@ -33,6 +33,8 @@ public class NBClassifier {
         String line = "";
         try {
             br = new BufferedReader(new FileReader(csvFileName));
+            br.readLine(); // this will skips the first line
+
             while ((line = br.readLine()) != null) {
                 // use comma as separator
                 String[] example = line.split(",");
